@@ -1,4 +1,3 @@
-import { siteConfig } from '@/config/site-config';
 import Button from '@/components/Button';
 import Image from 'next/image';
 import { Award, Users, MapPin, Shield } from 'lucide-react';
@@ -56,7 +55,7 @@ export default function AboutPage() {
                   Founded in 2008, Printer Supports Online has been providing exceptional printer repair and support services to businesses and individuals across the United States.
                 </p>
                 <p>
-                  Our mission is simple: deliver fast, reliable, and professional printer support that keeps your business running smoothly. With over 15 years of experience, we've helped thousands of customers resolve their printer issues.
+                  Our mission is simple: deliver fast, reliable, and professional printer support that keeps your business running smoothly. With over 15 years of experience, we&apos;ve helped thousands of customers resolve their printer issues.
                 </p>
                 <p>
                   We pride ourselves on our certified technicians, comprehensive service offerings, and commitment to customer satisfaction.
@@ -147,7 +146,7 @@ export default function AboutPage() {
           </div>
           
           <p className="text-gray-600">
-            Don't see your state? Contact us to confirm coverage.
+            Don&apos;t see your state? Contact us to confirm coverage.
           </p>
         </div>
       </section>

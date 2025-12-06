@@ -1,3 +1,4 @@
+import React from 'react';
 import * as Icons from 'lucide-react';
 
 interface BenefitCardProps {
@@ -10,7 +11,7 @@ export default function BenefitCard({ icon, title, description }: BenefitCardPro
   const iconName = icon.split('-').map((word, index) => 
     index === 0 ? word.charAt(0).toUpperCase() + word.slice(1) : word.charAt(0).toUpperCase() + word.slice(1)
   ).join('');
-  const IconComponent = (Icons as any)[iconName] || Icons.Star;
+  const IconComponent = (Icons as unknown as Record<string, React.ComponentType<{ className?: string }>>)[iconName] || Icons.Star;
 
   return (
     <div className="group text-center p-6 sm:p-8 bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 hover:border-blue-300 hover:-translate-y-1 h-full w-full flex flex-col">

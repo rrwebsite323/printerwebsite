@@ -43,7 +43,7 @@ export default function ContactForm({
       setTimeout(() => {
         setSubmitStatus('idle');
       }, 5000);
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
       setErrorMessage('Failed to send message. Please try again or call us directly.');
     }
@@ -55,7 +55,7 @@ export default function ContactForm({
         <CheckCircle className="w-12 h-12 sm:w-16 sm:h-16 text-green-600 mx-auto mb-3 sm:mb-4" />
         <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Message Sent!</h3>
         <p className="text-sm sm:text-base text-gray-600 mb-4">
-          Thank you for contacting us. We'll get back to you within 24 hours.
+          Thank you for contacting us. We&apos;ll get back to you within 24 hours.
         </p>
         <button
           onClick={() => setSubmitStatus('idle')}

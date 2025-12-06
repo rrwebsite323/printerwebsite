@@ -1,3 +1,4 @@
+import React from 'react';
 import { siteConfig } from '@/config/site-config';
 import ServiceCard from '@/components/ServiceCard';
 import Button from '@/components/Button';
@@ -72,7 +73,7 @@ export default function ServicesPage() {
               const iconName = problem.icon.split('-').map((word, index) => 
                 index === 0 ? word.charAt(0).toUpperCase() + word.slice(1) : word.charAt(0).toUpperCase() + word.slice(1)
               ).join('');
-              const IconComponent = (Icons as any)[iconName] || Icons.AlertCircle;
+              const IconComponent = (Icons as unknown as Record<string, React.ComponentType<{ className?: string }>>)[iconName] || Icons.AlertCircle;
 
               return (
                 <div key={problem.id} className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border-2 border-gray-100 hover:border-red-300">

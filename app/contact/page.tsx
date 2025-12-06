@@ -17,7 +17,7 @@ export default function ContactPage() {
             Get In Touch
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-2xl mx-auto px-4">
-            We're here to help with all your printer support needs
+            We&apos;re here to help with all your printer support needs
           </p>
         </div>
       </section>
