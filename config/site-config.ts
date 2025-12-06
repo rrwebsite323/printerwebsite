@@ -1,0 +1,181 @@
+import { SiteConfig } from '@/lib/types';
+
+export const siteConfig: SiteConfig = {
+  business: {
+    name: 'Printer Supports Online',
+    tagline: 'Expert Printer Repair & Support Services',
+    phone: '+1 (805) 409-8787',
+    smsNumber: '+1 (805) 409-8787',
+    email: 'info@printersupportsonline.com',
+    hours: {
+      monday: '8:00 AM - 6:00 PM',
+      tuesday: '8:00 AM - 6:00 PM',
+      wednesday: '8:00 AM - 6:00 PM',
+      thursday: '8:00 AM - 6:00 PM',
+      friday: '8:00 AM - 6:00 PM',
+      saturday: '10:00 AM - 4:00 PM',
+      sunday: '10:00 AM - 4:00 PM',
+    },
+  },
+  branding: {
+    colors: {
+      primary: '#2563EB',
+      primaryDark: '#1E40AF',
+      primaryLight: '#DBEAFE',
+    },
+  },
+  content: {
+    services: [
+      {
+        id: 'printer-repair',
+        title: 'Printer Repair',
+        description: 'Fast and reliable printer repair services for all major brands. Our certified technicians diagnose and fix hardware issues, paper jams, and mechanical problems quickly.',
+        icon: 'wrench',
+        features: [
+          'Hardware diagnostics and repair',
+          'Paper jam resolution',
+          'Mechanical component replacement',
+          'Same-day service available',
+        ],
+      },
+      {
+        id: 'maintenance-support',
+        title: 'Maintenance & Support',
+        description: 'Keep your printers running smoothly with regular maintenance and ongoing technical support. Prevent issues before they occur with our comprehensive care plans.',
+        icon: 'settings',
+        features: [
+          'Regular maintenance schedules',
+          'Preventive care',
+          'Technical support hotline',
+          'Performance optimization',
+        ],
+      },
+      {
+        id: 'installation-setup',
+        title: 'Installation & Setup',
+        description: 'Professional installation and configuration of new printers. We ensure your devices are properly connected, configured, and optimized for your specific needs.',
+        icon: 'package',
+        features: [
+          'New printer installation',
+          'Network configuration',
+          'Driver installation',
+          'User training',
+        ],
+      },
+      {
+        id: 'network-solutions',
+        title: 'Network Printer Solutions',
+        description: 'Expert setup and troubleshooting for network printers. We configure secure connections, manage print servers, and resolve connectivity issues.',
+        icon: 'network',
+        features: [
+          'Network printer setup',
+          'Print server configuration',
+          'Wireless connectivity',
+          'Security configuration',
+        ],
+      },
+      {
+        id: 'troubleshooting',
+        title: 'Troubleshooting',
+        description: 'Comprehensive diagnostic services to identify and resolve printer issues. From error messages to print quality problems, we find and fix the root cause.',
+        icon: 'search',
+        features: [
+          'Error code diagnosis',
+          'Print quality issues',
+          'Software conflicts',
+          'Driver problems',
+        ],
+      },
+      {
+        id: 'emergency-support',
+        title: 'Emergency Support',
+        description: 'Urgent printer repair services when you need them most. Fast response times and priority service to minimize downtime for your business.',
+        icon: 'zap',
+        features: [
+          '24/7 emergency hotline',
+          'Rapid response time',
+          'On-site service available',
+          'Priority scheduling',
+        ],
+      },
+    ],
+    benefits: [
+      {
+        id: 'fast-response',
+        title: 'Fast Response Time',
+        description: 'We understand printer issues can\'t wait. Our team responds quickly to get your equipment back up and running with minimal downtime.',
+        icon: 'clock',
+      },
+      {
+        id: 'certified-techs',
+        title: 'Certified Technicians',
+        description: 'All our technicians are factory-trained and certified to work on major printer brands, ensuring expert service every time.',
+        icon: 'award',
+      },
+      {
+        id: 'all-brands',
+        title: 'All Brands Supported',
+        description: 'From HP to Canon, Epson to Brother, we service all major printer brands with genuine parts and expert knowledge.',
+        icon: 'check-circle',
+      },
+      {
+        id: 'affordable',
+        title: 'Affordable Pricing',
+        description: 'Competitive rates with transparent pricing. No hidden fees, just honest service at fair prices with free diagnostics.',
+        icon: 'dollar-sign',
+      },
+    ],
+    brands: [
+      { name: 'HP', logo: 'https://cdn.worldvectorlogo.com/logos/hp-2.svg', alt: 'HP Printers' },
+      { name: 'Canon', logo: 'https://cdn.worldvectorlogo.com/logos/canon-2.svg', alt: 'Canon Printers' },
+      { name: 'Epson', logo: 'https://cdn.worldvectorlogo.com/logos/epson-2.svg', alt: 'Epson Printers' },
+      { name: 'Brother', logo: 'https://cdn.worldvectorlogo.com/logos/brother-3.svg', alt: 'Brother Printers' },
+      { name: 'Xerox', logo: 'https://cdn.worldvectorlogo.com/logos/xerox-2.svg', alt: 'Xerox Printers' },
+      { name: 'Lexmark', logo: 'https://cdn.worldvectorlogo.com/logos/lexmark.svg', alt: 'Lexmark Printers' },
+      { name: 'Dell', logo: 'https://cdn.worldvectorlogo.com/logos/dell-2.svg', alt: 'Dell Printers' },
+      { name: 'Samsung', logo: 'https://cdn.worldvectorlogo.com/logos/samsung-5.svg', alt: 'Samsung Printers' },
+      { name: 'Ricoh', logo: 'https://cdn.worldvectorlogo.com/logos/ricoh-1.svg', alt: 'Ricoh Printers' },
+      { name: 'Kyocera', logo: 'https://cdn.worldvectorlogo.com/logos/kyocera-1.svg', alt: 'Kyocera Printers' },
+      { name: 'Sharp', logo: 'https://cdn.worldvectorlogo.com/logos/sharp-2.svg', alt: 'Sharp Printers' },
+      { name: 'Konica Minolta', logo: 'https://cdn.worldvectorlogo.com/logos/konica-minolta-1.svg', alt: 'Konica Minolta Printers' },
+    ],
+    problems: [
+      {
+        id: 'paper-jams',
+        title: 'Paper Jams',
+        description: 'Frequent paper jams disrupting your workflow? We identify the root cause and fix it permanently.',
+        icon: 'file-x',
+      },
+      {
+        id: 'print-quality',
+        title: 'Poor Print Quality',
+        description: 'Faded prints, streaks, or smudges? We restore your printer to produce crisp, clear documents.',
+        icon: 'image',
+      },
+      {
+        id: 'connectivity',
+        title: 'Connectivity Issues',
+        description: 'Can\'t connect to your printer? We resolve network, wireless, and USB connection problems.',
+        icon: 'wifi-off',
+      },
+      {
+        id: 'error-messages',
+        title: 'Error Messages',
+        description: 'Cryptic error codes stopping your work? Our experts decode and fix any printer error.',
+        icon: 'alert-triangle',
+      },
+      {
+        id: 'slow-printing',
+        title: 'Slow Printing',
+        description: 'Printer taking forever? We optimize performance and speed up your printing process.',
+        icon: 'timer',
+      },
+      {
+        id: 'driver-issues',
+        title: 'Driver Issues',
+        description: 'Driver conflicts or outdated software? We install and configure the correct drivers.',
+        icon: 'download',
+      },
+    ],
+  },
+};
