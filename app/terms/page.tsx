@@ -23,7 +23,7 @@ export default function TermsOfService() {
                 By accessing and using the services provided by {siteConfig.business.name}, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                These Terms of Service ("Terms") govern your use of our website and printer repair services. Please read these Terms carefully before using our services.
+                These Terms of Service (&quot;Terms&quot;) govern your use of our website and printer repair services. Please read these Terms carefully before using our services.
               </p>
             </section>
 
