@@ -1,15 +1,13 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { Menu, X, Phone } from 'lucide-react';
 import { siteConfig } from '@/config/site-config';
 
-interface HeaderProps {
-  currentPage?: 'home' | 'services' | 'about' | 'contact';
-}
-
-export default function Header({ currentPage = 'home' }: HeaderProps) {
+export default function Header() {
+  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
@@ -23,11 +21,19 @@ export default function Header({ currentPage = 'home' }: HeaderProps) {
   }, []);
 
   const navLinks = [
-    { href: '/', label: 'Home', page: 'home' },
-    { href: '/services', label: 'Services', page: 'services' },
-    { href: '/about', label: 'About', page: 'about' },
-    { href: '/contact', label: 'Contact', page: 'contact' },
+    { href: '/', label: 'Home' },
+    { href: '/services', label: 'Services' },
+    { href: '/about', label: 'About' },
+    { href: '/contact', label: 'Contact' },
   ];
+
+  // Function to check if a link is active
+  const isActiveLink = (href: string) => {
+    if (href === '/') {
+      return pathname === '/';
+    }
+    return pathname.startsWith(href);
+  };
 
   return (
     <header
@@ -53,7 +59,7 @@ export default function Header({ currentPage = 'home' }: HeaderProps) {
                 key={link.href}
                 href={link.href}
                 className={`text-base font-semibold transition-colors ${
-                  currentPage === link.page
+                  isActiveLink(link.href)
                     ? 'text-blue-600'
                     : 'text-gray-700 hover:text-blue-600'
                 }`}
@@ -106,7 +112,7 @@ export default function Header({ currentPage = 'home' }: HeaderProps) {
                 href={link.href}
                 onClick={() => setIsMenuOpen(false)}
                 className={`block px-4 py-3 rounded-lg text-base font-semibold ${
-                  currentPage === link.page
+                  isActiveLink(link.href)
                     ? 'bg-blue-50 text-blue-600'
                     : 'text-gray-700 hover:bg-gray-50'
                 }`}
